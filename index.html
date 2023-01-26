@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device, user-scalable=yes, initial-scale=1.5">
+        <title>Reloj</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="datos">
+                <div class="titulo"> 
+                    <h3>Hora Actual:</h3>
+                </div>
+                <div class="hora">
+                    <h3 id="hora"></h3>
+                </div>
+
+            </div>
+            <div class="reloj">
+                <img src="reloj.png" alt="reloj">
+                <canvas id="horero" width="400" height="400"></canvas>
+                <canvas id="minutero" width="400" height="400"></canvas>
+                <canvas id="segundero" width="400" height="400"></canvas>
+                <audio id="audio" controls>
+                    <source src="./reloj.wav" type="audio/wav">
+                </audio>
+            </div>
+        </div>
+      <script src="script.js"></script>
+    </body>
+</html>
